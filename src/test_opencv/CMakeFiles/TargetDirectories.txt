@@ -1,0 +1,4 @@
+G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/ALL_BUILD.dir
+G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/ZERO_CHECK.dir
+G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/HWaterMark.dir
+G:/GitHub/HWaterMark/src/test_opencv/test_opencv/CMakeFiles/test_opencv.dir

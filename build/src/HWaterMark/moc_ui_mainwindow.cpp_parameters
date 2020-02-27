@@ -1,0 +1,8 @@
+-IG:/GitHub/HWaterMark/include
+-IG:/GitHub/HWaterMark/build/src/HWaterMark
+-D_WIN32_WINNT=0x0600
+-DWIN32
+--compiler-flavor=msvc
+-o
+G:/GitHub/HWaterMark/build/src/HWaterMark/moc_ui_mainwindow.cpp
+G:/GitHub/HWaterMark/src/HWaterMark/ui_mainwindow.h

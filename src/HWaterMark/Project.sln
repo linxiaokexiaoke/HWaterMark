@@ -4,6 +4,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxp
 	ProjectSection(ProjectDependencies) = postProject
 		{D4B5E679-6286-3840-A98E-C6D65DDC23DC} = {D4B5E679-6286-3840-A98E-C6D65DDC23DC}
 		{C0A4A0E6-C7B7-3082-915E-32AFB888B13D} = {C0A4A0E6-C7B7-3082-915E-32AFB888B13D}
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6} = {4833A45C-6B44-3538-B615-EC4B5CBD05A6}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWaterMark", "HWaterMark\HWaterMark.vcxproj", "{D4B5E679-6286-3840-A98E-C6D65DDC23DC}"
@@ -13,6 +14,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWaterMark", "HWaterMark\HW
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{C0A4A0E6-C7B7-3082-915E-32AFB888B13D}"
 	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_opencv", "test_opencv\test_opencv.vcxproj", "{4833A45C-6B44-3538-B615-EC4B5CBD05A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C0A4A0E6-C7B7-3082-915E-32AFB888B13D} = {C0A4A0E6-C7B7-3082-915E-32AFB888B13D}
 	EndProjectSection
 EndProject
 Global
@@ -43,6 +49,14 @@ Global
 		{C0A4A0E6-C7B7-3082-915E-32AFB888B13D}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
 		{C0A4A0E6-C7B7-3082-915E-32AFB888B13D}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
 		{C0A4A0E6-C7B7-3082-915E-32AFB888B13D}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.Debug|Win32.Build.0 = Debug|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.Release|Win32.ActiveCfg = Release|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.Release|Win32.Build.0 = Release|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{4833A45C-6B44-3538-B615-EC4B5CBD05A6}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0FBB6D1B-0233-3841-B53E-41700C20E227}

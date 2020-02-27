@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("G:/GitHub/HWaterMark/src/HWaterMark/HWaterMark/cmake_install.cmake")
+  include("G:/GitHub/HWaterMark/src/HWaterMark/test_opencv/cmake_install.cmake")
 
 endif()
 

@@ -1,0 +1,11 @@
+﻿生成启动时间为 2020/2/26 1:49:10。
+     1>项目“G:\GitHub\HWaterMark\src\HWaterMark\ZERO_CHECK.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because G:/GitHub/HWaterMark/src/HWaterMark/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because G:/GitHub/HWaterMark/src/HWaterMark/HWaterMark/CMakeFiles/generate.stamp is up-to-date.
+     1>已完成生成项目“G:\GitHub\HWaterMark\src\HWaterMark\ZERO_CHECK.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.67

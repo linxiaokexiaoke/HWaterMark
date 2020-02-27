@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+G:/GitHub/HWaterMark/src/test_opencv/CMakeLists.txt
+G:/Program Files (x86)/opencv/build/OpenCVConfig-version.cmake
+G:/Program Files (x86)/opencv/build/OpenCVConfig.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVConfig.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVModules-debug.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVModules-release.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVModules.cmake

@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D7588CB-CE21-3156-B34F-DF629638A80E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>HWaterMark</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HWaterMark.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HWaterMark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HWaterMark.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HWaterMark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HWaterMark.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HWaterMark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HWaterMark.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HWaterMark</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgetsd.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quickd.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Guid.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qmld.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Networkd.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Debug/HWaterMark.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Debug/HWaterMark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgets.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quick.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Gui.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qml.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Network.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Release/HWaterMark.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Release/HWaterMark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgets.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quick.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Gui.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qml.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Network.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/MinSizeRel/HWaterMark.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/MinSizeRel/HWaterMark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_REENTRANT;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SHARED;QT_WIDGETS_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_QUICK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\GitHub\HWaterMark\src\test_opencv\HWaterMark;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore;G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork;G:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgets.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quick.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Gui.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qml.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Network.lib;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/RelWithDebInfo/HWaterMark.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/RelWithDebInfo/HWaterMark.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\GitHub\HWaterMark\src\test_opencv\CMakeFiles\4a58726c1dc4fe2bc41489ff55be2012\moc_mainwindow.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\GitHub\HWaterMark\src\test_opencv\CMakeFiles\4a58726c1dc4fe2bc41489ff55be2012\moc_ui_mainwindow.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_ui_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_ui_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_ui_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\ui_mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_ui_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_ui_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_ui_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_ui_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\ui_mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_ui_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_ui_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_ui_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_ui_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\ui_mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_ui_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_ui_mainwindow.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd G:\GitHub\HWaterMark\src\test_opencv\HWaterMark
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+G:\Qt\Qt5.11.1\5.11.1\msvc2015\bin\moc.exe @G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_ui_mainwindow.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/4a58726c1dc4fe2bc41489ff55be2012/moc_ui_mainwindow.cpp.rule;G:\GitHub\HWaterMark\src\HWaterMark\ui_mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_ui_mainwindow.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/GitHub/HWaterMark/src -BG:/GitHub/HWaterMark/src/test_opencv --check-stamp-file G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5Config.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ModuleLocation.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QFlatpakThemePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/GitHub/HWaterMark/src -BG:/GitHub/HWaterMark/src/test_opencv --check-stamp-file G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5Config.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ModuleLocation.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QFlatpakThemePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/GitHub/HWaterMark/src -BG:/GitHub/HWaterMark/src/test_opencv --check-stamp-file G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5Config.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ModuleLocation.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QFlatpakThemePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/GitHub/HWaterMark/src -BG:/GitHub/HWaterMark/src/test_opencv --check-stamp-file G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5Config.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5\Qt5ModuleLocation.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QFlatpakThemePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5LinguistTools\Qt5LinguistToolsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5QmlConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QDebugMessageServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QLocalClientConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebugServerFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlDebuggerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlInspectorServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugConnectorFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlNativeDebugServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQmlProfilerServiceFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QQuickProfilerAdapterFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Qml\Qt5Qml_QTcpServerConnectionFactory.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Quick\Qt5QuickConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_mainwindow.cpp" />
+    <ClCompile Include="G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_ui_mainwindow.cpp" />
+    <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\HWaterMarkMain.cpp" />
+    <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\GitHub\HWaterMark\src\test_opencv\ZERO_CHECK.vcxproj">
+      <Project>{F6B213FE-6072-363A-9A93-2F8950102889}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

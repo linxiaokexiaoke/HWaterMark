@@ -1,0 +1,6 @@
+-IG:/GitHub/HWaterMark/src/test_opencv/HWaterMark
+-DWIN32
+--compiler-flavor=msvc
+-o
+G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/moc_ui_mainwindow.cpp
+G:/GitHub/HWaterMark/src/HWaterMark/ui_mainwindow.h

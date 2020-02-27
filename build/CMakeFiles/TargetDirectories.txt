@@ -1,0 +1,3 @@
+G:/GitHub/HWaterMark/build/CMakeFiles/ALL_BUILD.dir
+G:/GitHub/HWaterMark/build/CMakeFiles/ZERO_CHECK.dir
+G:/GitHub/HWaterMark/build/src/HWaterMark/CMakeFiles/HWaterMark.dir

@@ -2,14 +2,18 @@ FIND_PACKAGE (Qt5 REQUIRED Core LinguistTools Gui Qml Widgets Quick)
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
 SET(HWaterMark_MOC_SRCS
       ##ADD MOC FILE HERE ,REALLY IS *.h that CONTAINS Q_OBJECT
+	  mainwindow.h
+	  ui_mainwindow.h
 )
 
 SET(HWaterMark_SRCS
       ##ADD SRC FILE HERE
       HWaterMarkMain.cpp
+	  mainwindow.cpp
 )
 SET(HWaterMark_UIS
       ##ADD UI FILE HERE
+	  #mainwindow.ui
 )
 SET(HWaterMark_LIBS
       ##ADD LIB FILE HERE

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\GitHub\HWaterMark\build\src\HWaterMark\moc_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\GitHub\HWaterMark\build\src\HWaterMark\moc_ui_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\HWaterMarkMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\GitHub\HWaterMark\build\CMakeFiles\fc77202e1f950e39693014a405f62ef3\moc_mainwindow.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\GitHub\HWaterMark\build\CMakeFiles\fc77202e1f950e39693014a405f62ef3\moc_ui_mainwindow.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\GitHub\HWaterMark\src\HWaterMark\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{509DF34F-128A-3274-BE4E-81FF116ED25B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFF4CABF-CA3F-375B-961F-4B531751CD48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

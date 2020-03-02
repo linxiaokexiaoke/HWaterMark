@@ -7,12 +7,13 @@
     <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\HWaterMark\moc_ui_mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\HWaterMarkMain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="G:\GitHub\HWaterMark\src\HWaterMark\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyOpencv.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="G:\GitHub\HWaterMark\src\HWaterMark\CMakeFiles\a227be806589b20e11acdbecd072c0ff\moc_mainwindow.cpp.rule">
@@ -30,5 +31,8 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{8D3EF32F-F0CE-35E0-A8CC-E42D8CF2CD2C}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyOpencv.h" />
   </ItemGroup>
 </Project>

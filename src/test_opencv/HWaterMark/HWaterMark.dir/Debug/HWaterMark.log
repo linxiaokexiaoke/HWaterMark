@@ -1,14 +1,32 @@
-﻿生成启动时间为 2020/2/27 21:00:44。
-     1>项目“G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\HWaterMark.vcxproj”在节点 2 上(Build 个目标)。
-     1>Link:
-         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\Debug\HWaterMark.exe" /INCREMENTAL /NOLOGO G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgetsd.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quickd.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Guid.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qmld.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Networkd.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Debug/HWaterMark.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Debug/HWaterMark.lib" /MACHINE:X86 /SAFESEH  /machine:X86 HWaterMark.dir\Debug\moc_mainwindow.obj
+﻿生成启动时间为 2020/3/1 13:10:15。
+     1>项目“G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\HWaterMark.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>CustomBuild:
+         Generating moc_mainwindow.cpp
+         Generating moc_ui_mainwindow.cpp
+         G:/GitHub/HWaterMark/src/HWaterMark/ui_mainwindow.h(0): Note: No relevant classes found. No output generated.
+         Building Custom Rule G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt
+         CMake does not need to re-run because G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"G:\Program Files (x86)\opencv\build\include" /I"G:\Program Files (x86)\opencv\build\include\opencv" /IG:\GitHub\HWaterMark\src\test_opencv\HWaterMark /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore /I"G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc" /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _REENTRANT /D QT_NO_DEBUG /D QT_SQL_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_SHARED /D QT_WIDGETS_LIB /D QT_QML_LIB /D QT_NETWORK_LIB /D QT_QUICK_LIB /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"HWaterMark.dir\Debug\\" /Fd"HWaterMark.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_mainwindow.cpp G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\moc_ui_mainwindow.cpp G:\GitHub\HWaterMark\src\HWaterMark\HWaterMarkMain.cpp G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp
+         moc_mainwindow.cpp
+     1>g:\github\hwatermark\src\test_opencv\hwatermark\../../HWaterMark/mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_ui_mainwindow.cpp
+         HWaterMarkMain.cpp
+     1>g:\github\hwatermark\src\hwatermark\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\program files (x86)\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+         mainwindow.cpp
+     1>G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\github\hwatermark\src\hwatermark\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\Debug\HWaterMark.exe" /INCREMENTAL /NOLOGO "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_videostab2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_ts2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_superres2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_stitching2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_contrib2413d.lib" G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgetsd.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quickd.lib "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_nonfree2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_ocl2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_gpu2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_photo2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_objdetect2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_legacy2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_video2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_ml2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_calib3d2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_features2d2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_highgui2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_imgproc2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_flann2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_core2413d.lib" G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Guid.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qmld.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Networkd.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Debug/HWaterMark.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/Debug/HWaterMark.lib" /MACHINE:X86 /SAFESEH  /machine:X86 HWaterMark.dir\Debug\moc_mainwindow.obj
          HWaterMark.dir\Debug\moc_ui_mainwindow.obj
          HWaterMark.dir\Debug\HWaterMarkMain.obj
          HWaterMark.dir\Debug\mainwindow.obj
-         LINK : 没有找到 G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\Debug\HWaterMark.exe 或上一个增量链接没有生成它；正在执行完全链接
          HWaterMark.vcxproj -> G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\Debug\HWaterMark.exe
-     1>已完成生成项目“G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\HWaterMark.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“G:\GitHub\HWaterMark\src\test_opencv\HWaterMark\HWaterMark.vcxproj”(Rebuild 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:01.15
+已用时间 00:00:05.38

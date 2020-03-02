@@ -8,6 +8,26 @@
 #include <QFileInfo>
 
 
+#include <stdio.h>
+#include <cv.h>
+#include <highgui.h>
+#include <string>
+#include "opencv2/imgproc/imgproc.hpp"
+#include <iostream>
+#include "opencv2/opencv.hpp"//OpenCV文件包含
+using namespace cv;          //OpenCV命名空间
+using namespace std;
+
+
+//#include "test_opencvMain.cpp"
+#include "MyOpencv.h"
+
+
+static  void Read()
+{
+	//Qstring 
+}
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -18,6 +38,17 @@ MainWindow::MainWindow(QWidget *parent) :
     //初始化
     //灰色的默认提示
     ui->lineEdit->setPlaceholderText(" 上传您需要水印的图片");
+
+	Button1 = new QPushButton("addmark",this);
+	Button2 = new QPushButton("idft",this);
+	Button1->move(440, 400);
+	Button2->move(530, 400);
+
+	myopencv = new MyOpencv();
+
+	connect(Button1, SIGNAL(pressed()), this, SLOT(addmarkSlot()));
+	connect(Button2, SIGNAL(pressed()), this, SLOT(idftSlot()));
+
 }
 
 MainWindow::~MainWindow()
@@ -25,10 +56,48 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::addmarkSlot()
+{
+	cv::Point mypoint;
+	mypoint.x = 200;
+	mypoint.y = 200;
+
+	Scalar myscalar;
+	myscalar = (150, 150, 150);
+	myopencv->transformImageWithText(myopencv->myResult,"WaterMark", mypoint, FONT_HERSHEY_DUPLEX,myscalar);
+}
+
+void MainWindow::idftSlot()
+{
+	myopencv->idft();
+}
+
+Mat MainWindow::QImage2Mat(const QImage &qimage)
+{
+	cv::Mat mat;
+	//qDebug() << image.format();
+	switch (qimage.format())
+	{
+	case QImage::Format_ARGB32:
+	case QImage::Format_RGB32:
+	case QImage::Format_ARGB32_Premultiplied:
+		mat = cv::Mat(qimage.height(), qimage.width(), CV_8UC4, (void*)qimage.constBits(), qimage.bytesPerLine());
+		break;
+	case QImage::Format_RGB888:
+		mat = cv::Mat(qimage.height(), qimage.width(), CV_8UC3, (void*)qimage.constBits(), qimage.bytesPerLine());
+		cv::cvtColor(mat, mat, CV_BGR2RGB);
+		break;
+	case QImage::Format_Indexed8:
+		mat = cv::Mat(qimage.height(), qimage.width(), CV_8UC1, (void*)qimage.constBits(), qimage.bytesPerLine());
+		break;
+	}
+	return mat;
+}
 //选择上传图片
 void MainWindow::on_pushButton_clicked()
 {
     PicfileName = QFileDialog::getOpenFileName(this, tr("open file"), " ",  tr("Image Files (*.png *.jpg *.bmp *.gif)"));
+	myimage = new QImage(PicfileName);
 
     if("" == PicfileName)
     {
@@ -43,7 +112,6 @@ void MainWindow::on_pushButton_clicked()
         ui->lineEdit_3->setText("成功上传图片!");
         ui->lineEdit->setText(PicfileName);
     }
-
 }
 
 void MainWindow::on_lineEdit_editingFinished()
@@ -73,7 +141,9 @@ void MainWindow::on_pushButton_2_clicked()
         bFlag = false;
         ui->lineEdit_3->setText("图片加载失败!");
     }
-
+	/*************************************************************/
+	
+	
 }
 
 //lineEdit_2保存水印文本
@@ -121,7 +191,7 @@ void MainWindow::on_pushButton_3_clicked()
 //加水印
 void MainWindow::MyMark(QPixmap & pm,const QString& text)
 {
-    //
+/*
     if(!Mypainter.begin(&pm))
     {
         ui->lineEdit_3->setText("图片初始化失败!");
@@ -157,11 +227,16 @@ void MainWindow::MyMark(QPixmap & pm,const QString& text)
         }
     }
 
-    /*结束painter；
-     * 否则会报错:QPixmap::operator=: Cannot assign to pixmap during painting;
-     *          QPainter::begin: A paint device can only be painted by one painter at a time.
-     */
+    //结束painter；
+     // 否则会报错:QPixmap::operator=: Cannot assign to pixmap during painting;
+     //          QPainter::begin: A paint device can only be painted by one painter at a time.
+
     Mypainter.end();
+*/
+
+	mImage = QImage2Mat(*myimage);
+	myopencv->Mydft(mImage);
+
 }
 
 //光标改变 槽函数

@@ -1,12 +1,92 @@
-﻿生成启动时间为 2020/2/27 20:54:38。
-     1>项目“G:\GitHub\HWaterMark\src\test_opencv\ZERO_CHECK.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2020/3/1 13:10:14。
+     1>项目“G:\GitHub\HWaterMark\src\test_opencv\ZERO_CHECK.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>CustomBuild:
          Checking Build System
          CMake does not need to re-run because G:/GitHub/HWaterMark/src/test_opencv/CMakeFiles/generate.stamp is up-to-date.
-         CMake does not need to re-run because G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp is up-to-date.
-         CMake does not need to re-run because G:/GitHub/HWaterMark/src/test_opencv/test_opencv/CMakeFiles/generate.stamp is up-to-date.
-     1>已完成生成项目“G:\GitHub\HWaterMark\src\test_opencv\ZERO_CHECK.vcxproj”(Build 个目标)的操作。
+         CMake is re-running because G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp is out-of-date.
+           the file 'G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt'
+           is newer than 'G:/GitHub/HWaterMark/src/test_opencv/HWaterMark/CMakeFiles/generate.stamp.depend'
+           result='-1'
+         -- Selecting Windows SDK version  to target Windows 10.0.14393.
+         -- OpenCV ARCH: x86
+         -- OpenCV RUNTIME: vc14
+         -- OpenCV STATIC: OFF
+         -- Found OpenCV 2.4.13.6 in G:/Program Files (x86)/opencv/build/x86/vc14/lib
+         -- You might need to add G:\Program Files (x86)\opencv\build\x86\vc14\bin to your PATH to be able to run your applications.
+         -- OpenCV ARCH: x86
+         -- OpenCV RUNTIME: vc14
+         -- OpenCV STATIC: OFF
+         -- Found OpenCV 2.4.13.6 in G:/Program Files (x86)/opencv/build/x86/vc14/lib
+         -- You might need to add G:\Program Files (x86)\opencv\build\x86\vc14\bin to your PATH to be able to run your applications.
+         CMake Warning (dev) in CMakeLists.txt:
+           No cmake_minimum_required command is present.  A line of code such as
+         
+             cmake_minimum_required(VERSION 3.14)
+         
+           should be added at the top of the file.  The version specified may be lower
+           if you wish to support older CMake versions for this project.  For more
+           information run "cmake --help-policy CMP0000".
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         -- Configuring done
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) in HWaterMark/CMakeLists.txt:
+           Policy CMP0020 is not set: Automatically link Qt executables to qtmain
+           target on Windows.  Run "cmake --help-policy CMP0020" for policy details.
+           Use the cmake_policy command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         -- Generating done
+         -- Build files have been written to: G:/GitHub/HWaterMark/src/test_opencv
+     1>已完成生成项目“G:\GitHub\HWaterMark\src\test_opencv\ZERO_CHECK.vcxproj”(Rebuild 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:00.96
+已用时间 00:00:00.85

@@ -1,0 +1,8 @@
+-IG:/Program Files (x86)/opencv/build/include
+-IG:/Program Files (x86)/opencv/build/include/opencv
+-IG:/GitHub/HWaterMark/src/HWaterMark/HWaterMark
+-DWIN32
+--compiler-flavor=msvc
+-o
+G:/GitHub/HWaterMark/src/HWaterMark/HWaterMark/moc_MyOpencv.cpp
+G:/GitHub/HWaterMark/src/HWaterMark/MyOpencv.h

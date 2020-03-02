@@ -1,15 +1,28 @@
+SET(OpenCV_DIR $ENV{OPENCV_DIR})
+SET(OpenCV_LIBS $ENV{OPENCV_LIBS})
+FIND_PACKAGE(OpenCV REQUIRED)
+IF(OpenCV_FOUND)
+    LINK_LIBRARIES(${OpenCV_LIBS})
+ELSE()
+    MESSAGE("OPENCV NOT FOUND")
+ENDIF()
+
+
 FIND_PACKAGE (Qt5 REQUIRED Core LinguistTools Gui Qml Widgets Quick)
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
 SET(HWaterMark_MOC_SRCS
       ##ADD MOC FILE HERE ,REALLY IS *.h that CONTAINS Q_OBJECT
 	  mainwindow.h
 	  ui_mainwindow.h
+	 
+	  
 )
 
 SET(HWaterMark_SRCS
       ##ADD SRC FILE HERE
-      HWaterMarkMain.cpp
-	  mainwindow.cpp
+      mainwindow.cpp
+	  main.cpp
+	  
 )
 SET(HWaterMark_UIS
       ##ADD UI FILE HERE
@@ -31,3 +44,4 @@ QT5_ADD_TRANSLATION(HWaterMark_QM ${HWaterMark_TRANS})
 ADD_DEFINITIONS(-D_REENTRANT -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED )
 ADD_EXECUTABLE(HWaterMark ${HWaterMark_MOC} ${HWaterMark_SRCS} ${HWaterMark_UIC} ${HWaterMark_RCC} ${HWaterMark_QM}) 
 TARGET_LINK_LIBRARIES(HWaterMark ${HWaterMark_LIBS} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Qml Qt5::Quick )
+

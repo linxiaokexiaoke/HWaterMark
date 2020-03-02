@@ -1,5 +1,5 @@
-﻿生成启动时间为 2020/2/27 20:54:39。
-     1>项目“G:\GitHub\HWaterMark\src\test_opencv\test_opencv\test_opencv.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2020/3/1 13:05:26。
+     1>项目“G:\GitHub\HWaterMark\src\test_opencv\test_opencv\test_opencv.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>CustomBuild:
          Building Custom Rule G:/GitHub/HWaterMark/src/test_opencv/CMakeLists.txt
          CMake does not need to re-run because G:/GitHub/HWaterMark/src/test_opencv/test_opencv/CMakeFiles/generate.stamp is up-to-date.
@@ -8,17 +8,17 @@
          test_opencvMain.cpp
      1>g:\program files (x86)\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-     1>G:\GitHub\HWaterMark\src\test_opencv\test_opencvMain.cpp(131): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>G:\GitHub\HWaterMark\src\test_opencv\test_opencvMain.cpp(139): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-     1>G:\GitHub\HWaterMark\src\test_opencv\test_opencvMain.cpp(165): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>G:\GitHub\HWaterMark\src\test_opencv\test_opencvMain.cpp(173): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-     1>G:\GitHub\HWaterMark\src\test_opencv\test_opencvMain.cpp(221): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>G:\GitHub\HWaterMark\src\test_opencv\test_opencvMain.cpp(229): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
        Link:
          G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\GitHub\HWaterMark\src\test_opencv\test_opencv\Debug\test_opencv.exe" /INCREMENTAL /NOLOGO "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_videostab2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_ts2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_superres2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_stitching2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_contrib2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_nonfree2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_ocl2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_gpu2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_photo2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_objdetect2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_legacy2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_video2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_ml2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_calib3d2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_features2d2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_highgui2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_imgproc2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_flann2413d.lib" "G:\Program Files (x86)\opencv\build\x86\vc14\lib\opencv_core2413d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"G:/GitHub/HWaterMark/src/test_opencv/test_opencv/Debug/test_opencv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/GitHub/HWaterMark/src/test_opencv/test_opencv/Debug/test_opencv.lib" /MACHINE:X86 /SAFESEH  /machine:X86 test_opencv.dir\Debug\test_opencvMain.obj
          test_opencv.vcxproj -> G:\GitHub\HWaterMark\src\test_opencv\test_opencv\Debug\test_opencv.exe
-     1>已完成生成项目“G:\GitHub\HWaterMark\src\test_opencv\test_opencv\test_opencv.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“G:\GitHub\HWaterMark\src\test_opencv\test_opencv\test_opencv.vcxproj”(Rebuild 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:02.98
+已用时间 00:00:02.24

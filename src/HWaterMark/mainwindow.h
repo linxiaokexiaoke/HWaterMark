@@ -6,6 +6,8 @@
 #include <QPixmap>
 #include <QPainter>
 #include <QMetaEnum>
+#include "MyOpencv.h"
+#include <qpushbutton.h>
 
 namespace Ui {
 class MainWindow;
@@ -40,6 +42,10 @@ private slots:
 
     void on_horizontalSlider_valueChanged(int value);
 
+	void addmarkSlot();
+
+	void idftSlot();
+
 private:
     Ui::MainWindow *ui;
 
@@ -57,11 +63,20 @@ public:
     QString sFont;//保存 字体类型
     int iTransparency = 155;//透明度 0-255
 
+	MyOpencv * myopencv;
+	QImage *myimage;
+	Mat mImage;
+
 
 public:
     void MyMark(QPixmap & pm,const QString& text);
     void MyGetColor();
     void MyGetFont();
+	Mat QImage2Mat(const QImage &image);
+
+public:
+	QPushButton * Button1;//加入水印
+	QPushButton * Button2;//傅里叶逆变换
 };
 
 #endif // MAINWINDOW_H

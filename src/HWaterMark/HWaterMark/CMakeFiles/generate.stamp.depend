@@ -1,6 +1,12 @@
 # CMake generation dependency list for this directory.
 C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeParseArguments.cmake
 G:/GitHub/HWaterMark/src/HWaterMark/CMakeLists.txt
+G:/Program Files (x86)/opencv/build/OpenCVConfig-version.cmake
+G:/Program Files (x86)/opencv/build/OpenCVConfig.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVConfig.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVModules-debug.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVModules-release.cmake
+G:/Program Files (x86)/opencv/build/x86/vc14/lib/OpenCVModules.cmake
 G:/Qt/Qt5.11.1/5.11.1/msvc2015/lib/cmake/Qt5/Qt5Config.cmake
 G:/Qt/Qt5.11.1/5.11.1/msvc2015/lib/cmake/Qt5/Qt5ConfigVersion.cmake
 G:/Qt/Qt5.11.1/5.11.1/msvc2015/lib/cmake/Qt5/Qt5ModuleLocation.cmake

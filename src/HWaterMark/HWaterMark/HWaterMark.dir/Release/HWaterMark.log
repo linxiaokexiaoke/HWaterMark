@@ -1,0 +1,18 @@
+﻿生成启动时间为 2020/3/1 5:30:03。
+     1>项目“G:\GitHub\HWaterMark\src\HWaterMark\HWaterMark\HWaterMark.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IG:\GitHub\HWaterMark\src\HWaterMark\HWaterMark /I"G:\Program Files (x86)\opencv\build\include" /I"G:\Program Files (x86)\opencv\build\include\opencv" /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtCore /I"G:\Qt\Qt5.11.1\5.11.1\msvc2015\.\mkspecs\win32-msvc" /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtGui /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtANGLE /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtWidgets /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQml /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtNetwork /IG:\Qt\Qt5.11.1\5.11.1\msvc2015\include\QtQuick /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _REENTRANT /D QT_NO_DEBUG /D QT_SQL_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_SHARED /D QT_WIDGETS_LIB /D QT_QML_LIB /D QT_NETWORK_LIB /D QT_QUICK_LIB /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"HWaterMark.dir\Release\\" /Fd"HWaterMark.dir\Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp
+         mainwindow.cpp
+     1>G:\GitHub\HWaterMark\src\HWaterMark\mainwindow.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\github\hwatermark\src\hwatermark\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\GitHub\HWaterMark\src\HWaterMark\HWaterMark\Release\HWaterMark.exe" /INCREMENTAL:NO /NOLOGO G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Widgets.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Quick.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Gui.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Qml.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Network.lib G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib\Qt5Core.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"G:/GitHub/HWaterMark/src/HWaterMark/HWaterMark/Release/HWaterMark.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/GitHub/HWaterMark/src/HWaterMark/HWaterMark/Release/HWaterMark.lib" /MACHINE:X86 /SAFESEH  /machine:X86 HWaterMark.dir\Release\moc_mainwindow.obj
+         HWaterMark.dir\Release\moc_ui_mainwindow.obj
+         HWaterMark.dir\Release\HWaterMarkMain.obj
+         HWaterMark.dir\Release\mainwindow.obj
+         HWaterMark.vcxproj -> G:\GitHub\HWaterMark\src\HWaterMark\HWaterMark\Release\HWaterMark.exe
+     1>已完成生成项目“G:\GitHub\HWaterMark\src\HWaterMark\HWaterMark\HWaterMark.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.99
